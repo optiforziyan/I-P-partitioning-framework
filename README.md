@@ -2,60 +2,45 @@
 
 ## Partitioning framework
 
-Here, we provide a self-explained R code (Alternative additive partitioning frameworks of distributional aggregation.R）for caculating the data dispersion (represented by a Poisson index of dispersion I) and spatial proximity (represented by an index as the average of pairwise Euclidean distances P) presented in our manuscript. 
+Here, we provide a self-explained R code (Alternative additive partitioning frameworks of distributional aggregation.R）for caculating the data dispersion (represented by a Poisson index of dispersion *I*) and spatial proximity (represented by an index as the average of pairwise Euclidean distances *P*) presented in our manuscript. 
 
 ###  **Folders**
 #### *functions* - Custom R Script
 1. Dirichlet-Multinomial distribution-S1.R
-* rdirichlet()   - random variate generation
-* rdirichlet1()  - random variate generation (avoid NAs)
-* dDir()         - probability density (not mass!) function of Dirichlet distribution
-* dMDir()        - probability mass (or density) function of the multinomial-Dirichlet distribution
-* dNBD()         - probability mass function for independent negative binomial model 
-* dNMD()         - probability mass function for negative multinomial model
-* rMDir()        - simulation of multinomial-Dirichlet distribution
-* rMDir1()       - simulation of multinomial-Dirichlet distribution by avoiding NAs
-* rand()         - random matrices generation
-* likelihood()   - calculation of the negative log-likelihood function for the Dirichlet-Multinomial model
-* likelihood0()  - calculation of the negative log-likelihood function for the null model: multinomial model
-* fit()          - fitting of the SDM model
-* fitNBD()       - fitting of the independent NBD model
-* fitNMD()       - fitting of the NMD model
-* fitMD()        - fitting of the ordinary multinomial model
-2. Spatial distribution Index.R
-* CECI()         - Clark and Evans Competition Index
-* DC()           - Deviation Coefficient or Diffusion Coefficient 
-* species.distribution() - Simulation of species distribution using Poisson cluster process
-* r2.test()      - calculate r2, RMSE, NRMSD based on actual values and predicted values
+* data_creation()               - A function to generate a random dataset for spatial ecology simulation
+* species.distribution()        - Simulation of species distribution using Poisson cluster process
+* I_sp_partitioning()           - Partitioning abundance-based data dispersion into within and between-species components (Eq.1)
+* I_genus_sp_partitioning()     - Partitioning of abundance-based data dispersion into within-genus within-species, within-genus between-species and between-genus components (Eq.3)
+* I_site_partitioning_simple()  - Partitioning abundance dispersion into within and between-site components without using parallel computing (Eq.2)
+* I_site_partitioning_parall()  - Partitioning abundance dispersion into within and between-site components using parallel computing (Eq.2)
+* I_site_genus_partitioning_1() - Partitioning of abundance dispersion into within-site within-genus, within-site between-genus and between-site components (Eq.4)
+* I_site_genus_partitioning_2() - Partitioning of abundance dispersion into within-site, between-site within-genus and between-site between-genus components (Eq.5)
+* D_sp_partitioning()           - Partitioning pairwise distances into within and between-species components (Eq.6)
+* D_site_partitioning()         - Partitioning pairwise distances into within-site and between-site components (Eq.6)
+* D_genus_sp_partitioning()     - Partitioning of pairwise distances into within-genus within-species distance, within-genus between-species distance and between-genus distance components (Eq.7)
+* D_site_genus_partitioning_1() - Partitioning of pairwise distances into within-site within-genus distance, within-site between-genus distance and between-site distance components (one form of Eq.7)
+* D_site_genus_partitioning_2() - Partitioning of pairwise distances into within-site within-genus distance, within-site between-genus distance and between-site distance components (another form of Eq.7)
+
 #### *input*
-* bci.spptable.rdata           - for more information, please visit: https://datadryad.org/stash/dataset/doi:10.15146/5xcp-0d46
-* bci.treen.rdata (n = 1 to 8) - for more information, please visit: https://datadryad.org/stash/dataset/doi:10.15146/5xcp-0d46
+* Data_Figure1.xlsx   - An example 
+
+
 #### *output*
-* randomized_single_species_distribution.rds - the results of numeric simulation – Randomized spatial-point distribution data
-* randomized_10_species_distribution.rds     - the results of Numeric simulation – Randomized spatial-point distribution data
-* other files are the results of application SDM to BCI dataset.
+
 
 ###  Code Availability
 #### Software
 1. R version 4.0.2 (2020-06-22)
 #### Required R packages
 1. MASS version 7.3-51.6
-2. dirmult version 0.1.3-5
-3. MCMCpack version 1.6-3
-4. coda version 0.19-3
-5. ggplot2 version 3.36
-6. spatstat version 1.64-1
-7. colorspace version 1.4-1
-8. ggpmisc version 0.3.5
-9. dgof version 1.2
-10. vioplot version 0.3.7
-11. doParallel version 1.0.15
+2. spatstat version 1.64-1
+3. stringr version 1.4.0
+4. readxl version 1.0.15
+5. doParallel version 1.0.15
 ## Citation
 
 
 ## Author(s)
 
 ## References: 
-Clark, P. J., and Evans, F. C. (1954). Distance to nearest neighbor as a measure of spatial relationships in populations. Ecology, 35, 445–453.
 
-Blackman, G. E. (1942). Statistical and ecological studies in the distribution of species in plant communities: I. dispersion as a factor in the study of changes in plant populations. Annals of Botany, 6, 351–370. 
