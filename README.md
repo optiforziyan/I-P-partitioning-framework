@@ -43,8 +43,8 @@ Here, we provide a self-explained R code (Alternative additive partitioning fram
 ## Author(s)
 
 ## References: 
-Anderson, M., Gorley, R., Clarke, K. (2008). PERMANOVA+ for PRIMER: guide to software and statistical methods. Plymouth, United Kingdom: PRIMER-E Ltd.
-Brown, J. H., Mehlman, D. W., Stevens, G. C. (1995). Spatial variation in abundance. Ecology, 76(7), 2028-2043. 
+1.Anderson, M., Gorley, R., Clarke, K. (2008). PERMANOVA+ for PRIMER: guide to software and statistical methods. Plymouth, United Kingdom: PRIMER-E Ltd.
+2.Brown, J. H., Mehlman, D. W., Stevens, G. C. (1995). Spatial variation in abundance. Ecology, 76(7), 2028-2043. 
 Cadotte, M. W., Jonathan Davies, T., Regetz, J., Kembel, S. W., Cleland, E., & Oakley, T. H. (2010). Phylogenetic diversity metrics for ecological communities: integrating species richness, abundance and evolutionary history. Ecology letters, 13(1), 96-105.
 Cappelatti, L., Mauffrey, A. R., Griffin, J. N. (2020). Functional diversity of habitat formers declines scale-dependently across an environmental stress gradient. Oecologia, 194(1-2), 135-149.
 Cavender-Bares, J., Kozak, K. H., Fine, P. V., & Kembel, S. W. (2009). The merging of community ecology and phylogenetic biology. Ecology letters, 12(7), 693-715.
