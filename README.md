@@ -39,7 +39,7 @@ Here, we provide a self-explained R code (Alternative additive partitioning fram
 5. doParallel version 1.0.15
 ## Citation
 
-Ziyan Liao#, Qi Xiao#, Youhua Chen© (2025). Additive components of multi-species distributional aggregation and their spatiotemporal relationships with multi-dimensional community structure. Global Ecology and Biogeography, 34, e70174. https://doi.org/10.1111/geb.70174.
+Ziyan Liao, Qi Xiao, Youhua Chen (2025). Additive components of multi-species distributional aggregation and their spatiotemporal relationships with multi-dimensional community structure. Global Ecology and Biogeography, 34, e70174. https://doi.org/10.1111/geb.70174.
 
 ## Author(s)
 Ziyan Liao optiforziyan@gmail.com/liaozy@cib.ac.cn
